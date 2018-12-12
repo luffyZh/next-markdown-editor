@@ -1,5 +1,5 @@
 # next-markdown-editor
-A demo for edit &amp; priview markdown based next-antd-scafflod quickly!
+A demo for edit &amp; priview markdown bases on next-antd-scafflod quickly!
 
 ## Features
  - next.js
