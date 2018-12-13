@@ -1,5 +1,6 @@
 /* eslint-disable */
 const withLess = require('@zeit/next-less');
+const withCss = require('@zeit/next-css');
 const lessToJS = require('less-vars-to-js');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const TerserPlugin = require('terser-webpack-plugin');
@@ -19,7 +20,7 @@ if (typeof require !== 'undefined') {
   require.extensions['.less'] = (file) => {}
 }
 
-module.exports = withLess({
+module.exports = withCss(withLess({
   lessLoaderOptions: {
     javascriptEnabled: true,
     modifyVars: themeVariables,
@@ -80,4 +81,4 @@ module.exports = withLess({
     // Important: return the modified config
     return config;
   }
-});
+}));

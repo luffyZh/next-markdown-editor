@@ -16,9 +16,10 @@ export default class MyDocument extends Document {
         <Head>
           <style>{`
             body {
+              position: absolute;
+              height: 100%;
               margin: 0,
               color: #fff;
-              text-align: center;
               background-color: #159944;
               background-image: linear-gradient(120deg,#1557aa,#159944);
             }

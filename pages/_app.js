@@ -6,7 +6,6 @@ import withRedux from 'next-redux-wrapper';
 import withReduxSaga from 'next-redux-saga';
 import createStore from '../redux/store';
 import Layout from '../components/Layout';
-import { RouterTitle } from '../constants/ConstTypes';
 import '../asserts/styles.less';
 class InTerViewSystem extends App {
   
@@ -42,7 +41,7 @@ class InTerViewSystem extends App {
         </Head>
         <Container>
           <Provider store={store}>
-            <Layout title={RouterTitle[router.pathname]}>
+            <Layout pathname={router.pathname}>
               <Component {...pageProps} router={router} />
             </Layout>
           </Provider>

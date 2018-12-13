@@ -30,9 +30,17 @@ const Layout = ({ pathname, children }) => (
         </Fragment>
       }
       falseComp={
-        <div className='content-container'>
-          {children}
-        </div>
+        <IfComp
+          expression={_.includes(pathname, 'edit')}
+          trueComp={
+            children
+          }
+          falseComp={
+            <div className='content-container'>
+              {children}
+            </div>
+          }
+        />
       }
     />
   </Fragment>

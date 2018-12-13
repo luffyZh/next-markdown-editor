@@ -7,6 +7,7 @@ const Home = () => (
       h1 {
         color: #fff;
         margin-bottom: 100px;
+        text-align: center;
       }
       .container {
         display: flex;
@@ -19,6 +20,7 @@ const Home = () => (
       }
       .link-container {
         width: 30%;
+        text-align: center;
       }
     `}</style>
     <h1>Next-Markdown-Editor</h1>
