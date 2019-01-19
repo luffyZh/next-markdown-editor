@@ -20,7 +20,10 @@ if (typeof require !== 'undefined') {
   require.extensions['.less'] = (file) => {}
 }
 
+const debug = process.env.NODE_ENV !== 'production';
+
 module.exports = withCss(withLess({
+  assetPrefix: !debug ? '/next-markdown-editor/' : '',
   exportPathMap: async function (defaultPathMap) {
     return {
       '/': { page: '/' },
