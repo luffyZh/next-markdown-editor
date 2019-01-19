@@ -16,6 +16,12 @@ const NormalEditor = () => (
         text-align: center;
         color: #fff;
       }
+      :global(.editor-toolbar) {
+        display: block;
+      }
+      :global(.CodeMirror) {
+        position: static;
+      }
     `}</style>
     <h1>普通Markdown编辑器</h1>
     <div className='editor-container'>

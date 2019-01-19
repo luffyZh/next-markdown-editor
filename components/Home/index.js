@@ -26,17 +26,17 @@ const Home = () => (
     <h1>Next-Markdown-Editor</h1>
     <div className='link-content'>
       <div className='link-container'>
-        <Link href='/normal'>
+        <Link prefetch href='/normal'>
           <Button size='large' type='default'>普通编辑器</Button>
         </Link>
       </div>
       <div className='link-container'>
-        <Link href='/edit'>
+        <Link prefetch href='/edit'>
           <Button size='large' type='default'>全屏编辑器</Button>
         </Link>
       </div>
       <div className='link-container'>
-        <Link href='/preview'>
+        <Link prefetch href='/preview'>
           <Button size='large' type='default'>预览Markdown</Button>
         </Link>
       </div>

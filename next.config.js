@@ -21,6 +21,14 @@ if (typeof require !== 'undefined') {
 }
 
 module.exports = withCss(withLess({
+  exportPathMap: async function (defaultPathMap) {
+    return {
+      '/': { page: '/' },
+      '/normal': { page: '/normal' },
+      '/edit': { page: '/edit' },
+      '/preview': { page: '/preview' }
+    }
+  },
   lessLoaderOptions: {
     javascriptEnabled: true,
     modifyVars: themeVariables,

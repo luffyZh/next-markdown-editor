@@ -6,9 +6,12 @@
   "author": "luffyZhou",
   "license": "MIT",
   "scripts": {
-    "dev": "node server.js",
+    "start": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "prod": "NODE_ENV=production node server.js",
+    "preexport": "next build",
+    "export": "next export",
+    "static-run": "next export && serve out"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
@@ -36,6 +39,7 @@
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
     "redux-saga": "^0.16.0",
+    "serve": "^10.1.1",
     "simplemde": "^1.11.2"
   },
   "devDependencies": {

@@ -14,11 +14,11 @@ class SimpleMDEditor extends Component {
 
   componentDidMount() {
     // 编辑器内容点击不弹文字
-    document.getElementById('markdownEditor')
+    document.getElementById('normalMarkdownEditor')
       .parentNode // 获取编辑器container
       .addEventListener('click', e => e.stopPropagation());
     this.smde = new SimpleMDE({
-      element: document.getElementById('markdownEditor').childElementCount,
+      element: document.getElementById('normalMarkdownEditor').childElementCount,
       autofocus: true,
       autosave: true,
       initialValue: '',
@@ -55,8 +55,8 @@ class SimpleMDEditor extends Component {
 
   render() {
     return (
-      <div id='editorContaienr'>
-        <textarea id='markdownEditor'></textarea>
+      <div id='normalEditorContaienr'>
+        <textarea id='normalMarkdownEditor'></textarea>
       </div>
     );
   }
