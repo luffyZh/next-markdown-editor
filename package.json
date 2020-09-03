@@ -40,7 +40,7 @@
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
     "redux-saga": "^0.16.0",
-    "serve": "^10.1.1",
+    "serve": "^10.1.2",
     "simplemde": "^1.11.2"
   },
   "devDependencies": {
