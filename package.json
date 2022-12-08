@@ -20,7 +20,7 @@
     "antd": "^3.8.4",
     "babel-plugin-import": "^1.9.0",
     "es6-promise": "^4.2.5",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "highlight.js": "^9.13.1",
     "if-comp": "^0.0.8",
     "isomorphic-unfetch": "^3.0.0",
